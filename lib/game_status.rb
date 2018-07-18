@@ -50,8 +50,10 @@ end
 def winner(board)
   if won?(board) == ["X","X","X"]
     return "X"
-  else
+  elsif
     won?(board) == ["O","O","O"]
     return "O"
+  else
+    nil
   end
 end
