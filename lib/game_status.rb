@@ -51,7 +51,7 @@ end
 [0,1,2]
 
 def winner(board)
-  if won?(board) == ["X","X","X"]
+  if board[0] == "X"
     return "X"
   elsif
     won?(board) == ["O","O","O"]
