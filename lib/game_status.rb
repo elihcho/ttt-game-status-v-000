@@ -49,7 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)[0] == "X"
+  if won?(board)[0] == "X" && won?(board)[1] == "X" && won?(board)[2] == "X"
     return "X"
   elsif
     won?(board) == ["O","O","O"]
