@@ -47,11 +47,13 @@ def over?(board)
   won?(board) || full?(board)
 end
 
+[0,1,2]
+
 def winner(board)
-  if won?(board)[0] == "X" && won?(board)[1] == "X" && won?(board)[2] == "X"
+  if won?(board) == ["X","X","X"]
     return "X"
   elsif
-    won?(board)[0] == "O" && won?(board)[1] == "O" && won?(board)[2] == "O"
+    won?(board) == ["O","O","O"]
     return "O"
   else
     nil
